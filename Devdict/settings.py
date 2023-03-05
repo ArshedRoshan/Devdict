@@ -200,5 +200,5 @@ AUTH_USER_MODEL = 'user.User'
 CORS_ORGIN_ALLOW_ALL = True
 CORS_ALLOW_CREDENTIALS = True
 CORS_ORIGIN_WHITELIST = (
-  'http://Devdict.netlify.app',,
+  'https://reliable-caramel-240bcb.netlify.app',
 )
