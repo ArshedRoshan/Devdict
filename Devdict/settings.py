@@ -199,6 +199,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 AUTH_USER_MODEL = 'user.User'
 CORS_ORGIN_ALLOW_ALL = True
 CORS_ALLOW_CREDENTIALS = True
-CORS_ORIGIN_WHITELIST = (
-  'https://reliable-caramel-240bcb.netlify.app',
-)
+# CORS_ORIGIN_WHITELIST = (
+#   'https://reliable-caramel-240bcb.netlify.app',
+# )
