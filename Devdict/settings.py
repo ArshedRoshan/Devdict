@@ -135,7 +135,7 @@ CHANNEL_LAYERS = {
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'devdict1',
+        'NAME': 'devdict',
         'USER':'arshed',
         'PASSWORD':'password',
         'HOST':'localhost'
@@ -200,5 +200,5 @@ AUTH_USER_MODEL = 'user.User'
 CORS_ORGIN_ALLOW_ALL = True
 CORS_ALLOW_CREDENTIALS = True
 CORS_ORIGIN_WHITELIST = (
-  'https://starlit-concha-f221bf.netlify.app',
+  'https://main.d22qz3ud5874i6.amplifyapp.com',
 )
