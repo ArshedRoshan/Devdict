@@ -198,10 +198,10 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 AUTH_USER_MODEL = 'user.User'
-CORS_ORGIN_ALLOW_ALL = True
-CORS_ALLOW_CREDENTIALS = True
-CORS_ORIGIN_WHITELIST = (
-    'https://localhost:3000',
-#   'https://main.d22qz3ud5874i6.amplifyapp.com/',
-)
+# CORS_ORGIN_ALLOW_ALL = True
+# CORS_ALLOW_CREDENTIALS = True
+# CORS_ORIGIN_WHITELIST = (
+#     'https://localhost:3000',
+# #   'https://main.d22qz3ud5874i6.amplifyapp.com/',
+# )
 CORS_ALLOW_ALL_ORIGINS = True
