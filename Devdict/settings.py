@@ -201,6 +201,7 @@ AUTH_USER_MODEL = 'user.User'
 CORS_ORGIN_ALLOW_ALL = True
 CORS_ALLOW_CREDENTIALS = True
 CORS_ORIGIN_WHITELIST = (
-  'https://main.d22qz3ud5874i6.amplifyapp.com/',
+    'https://localhost:3000',
+#   'https://main.d22qz3ud5874i6.amplifyapp.com/',
 )
 CORS_ALLOW_ALL_ORIGINS = True
