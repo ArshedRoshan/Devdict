@@ -39,7 +39,7 @@ def signup(request):
         print('errorr',serializer.errors)
         serializer.save()
         print('uyuyu',user['email'],user['username'])
-        send_email(user['email'],user['username'])
+        # send_email(user['email'],user['username'])
         return Response(200)
      return Response(serializer.errors)
 
