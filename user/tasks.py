@@ -15,8 +15,8 @@ def send_email(email,username):
 
 
 
-@shared_task(name='celeryusing')
-def celeryusing(email,username):
-    return send_email(email,username)
+# @shared_task(name='celeryusing')
+# def celeryusing(email,username):
+#     return send_email(email,username)
     
     
