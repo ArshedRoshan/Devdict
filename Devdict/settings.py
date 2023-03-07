@@ -205,3 +205,4 @@ CORS_ALLOW_CREDENTIALS = True
 #     'https://localhost:3000',
 # #   'https://main.d22qz3ud5874i6.amplifyapp.com/',
 # )
+CSRF_TRUSTED_ORIGINS = ["https://devdict.online","https://www.devdict.online"]
