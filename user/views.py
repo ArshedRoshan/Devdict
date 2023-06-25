@@ -28,6 +28,7 @@ from user.tasks import send_email
 from rest_framework.pagination import PageNumberPagination
 # Create your views here.
 
+
 @api_view(['GET','POST'])
 def signup(request):
      print('request',request)
@@ -39,7 +40,6 @@ def signup(request):
         print('errorr',serializer.errors)
         serializer.save()
         print('uyuyu',user['email'],user['username'])
-        # send_email(user['email'],user['username'])
         return Response(200)
      return Response(serializer.errors)
 
@@ -113,7 +113,6 @@ class MyTokenObtainPairSerializer(TokenObtainPairSerializer):
         token['is_active'] = user.is_active
         token['is_block'] = user.is_block
         # ...
-
         return token
 
 class MyTokenObtainPairView(TokenObtainPairView):
