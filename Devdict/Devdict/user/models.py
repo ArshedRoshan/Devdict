@@ -44,7 +44,7 @@ class User(AbstractBaseUser):
     last_name       = models.CharField(max_length=50)
     username        = models.CharField(max_length=50,unique=True)
     email           = models.EmailField(max_length=100)
-    phone_number    = models.IntegerField()
+    phone_number    = models.IntegerField(null=True,blank=True)
     Account_type    = models.CharField(max_length=50)
     company_name    = models.CharField(max_length=200,blank=True)
     Describe_company = models.CharField(max_length=200,blank=True)

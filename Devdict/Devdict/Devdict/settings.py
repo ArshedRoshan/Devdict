@@ -27,7 +27,8 @@ SECRET_KEY = 'django-insecure-pr%megh@@iu1o37lw5ibgq43@*7)#q@((&sfh+tohsn@7%0^lo
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
+# ALLOWED_HOSTS = ['18.179.207.245','localhost','devdict.online','www.devdict.online']
 
 
 # Application definition
@@ -135,9 +136,9 @@ CHANNEL_LAYERS = {
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'devdict',
-        'USER':'postgres',
-        'PASSWORD':'arshed215',
+        'NAME': 'Devdict',
+        'USER':'arshed',
+        'PASSWORD':'password',
         'HOST':'localhost'
     }
 }
@@ -197,8 +198,11 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 AUTH_USER_MODEL = 'user.User'
-CORS_ORGIN_ALLOW_ALL = True
+# CORS_ORGIN_ALLOW_ALL = True
+CORS_ALLOW_ALL_ORIGINS = True
 CORS_ALLOW_CREDENTIALS = True
-CORS_ORIGIN_WHITELIST = (
-  'http://localhost:3000',
-)
+# CORS_ORIGIN_WHITELIST = (
+#     'https://localhost:3000',
+# #   'https://main.d22qz3ud5874i6.amplifyapp.com/',
+# )
+CSRF_TRUSTED_ORIGINS = ["https://devdict.online","https://www.devdict.online"]

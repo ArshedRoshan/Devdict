@@ -24,9 +24,10 @@ from django.conf import settings
 # from django.core.mail import send_mail
 from django.utils.encoding import force_bytes
 from django.utils.http import urlsafe_base64_encode, urlsafe_base64_decode
-from user.tasks import celeryusing
+from user.tasks import send_email
 from rest_framework.pagination import PageNumberPagination
 # Create your views here.
+
 
 @api_view(['GET','POST'])
 def signup(request):
@@ -39,7 +40,6 @@ def signup(request):
         print('errorr',serializer.errors)
         serializer.save()
         print('uyuyu',user['email'],user['username'])
-        celeryusing.delay(user['email'],user['username'])
         return Response(200)
      return Response(serializer.errors)
 
@@ -113,7 +113,6 @@ class MyTokenObtainPairSerializer(TokenObtainPairSerializer):
         token['is_active'] = user.is_active
         token['is_block'] = user.is_block
         # ...
-
         return token
 
 class MyTokenObtainPairView(TokenObtainPairView):
