@@ -136,8 +136,8 @@ CHANNEL_LAYERS = {
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'Devdict',
-        'USER':'arshed',
+        'NAME': 'myproject',
+        'USER':'myprojectuser',
         'PASSWORD':'password',
         'HOST':'localhost'
     }
